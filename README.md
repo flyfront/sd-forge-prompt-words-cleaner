@@ -1,4 +1,4 @@
-# prompt-words-cleaner
+# sd-forge-prompt-words-cleaner
 
 A small extension for [Stable Diffusion WebUI Forge Neo](https://github.com/Haoming02/sd-webui-forge-classic/tree/neo). It replaces the `[prompt_words]` filename / directory pattern so that names are built from the words of the prompt, not from its syntax.
 
@@ -16,7 +16,7 @@ Example (`directories_max_prompt_words` = 8):
 
 ## Install
 
-Extensions > Install from URL: `https://github.com/flyfront/prompt-words-cleaner`
+Extensions > Install from URL: `https://github.com/flyfront/sd-forge-prompt-words-cleaner`
 
 No settings. It changes only what `[prompt_words]` expands to, which is used by "Save images to a subdirectory" (the default directory name pattern) and by any filename / directory pattern that contains `[prompt_words]`.
 
@@ -37,7 +37,7 @@ Forge Neo 用の小さな拡張。保存先サブディレクトリ名などに�
 - Prompt Editing / 交互(`[a:b:0.5]`、`[a|b]`)は最終ステップの状態に解決
 - 強調構文(`(a:1.2)`、`((a))`、`[a]`)は括弧と重みを取り除く
 
-導入は Extensions > Install from URL に `https://github.com/flyfront/prompt-words-cleaner`。設定項目は無い。
+導入は Extensions > Install from URL に `https://github.com/flyfront/sd-forge-prompt-words-cleaner`。設定項目は無い。
 
 `modules/images.py` の `FilenameGenerator.replacements["prompt_words"]` を起動時に上書きしているだけで、本体コードは変更しない。Forge Neo の内部モジュールに依存するので、本体の更新で動かなくなることがある(2.31 で確認)。
 
